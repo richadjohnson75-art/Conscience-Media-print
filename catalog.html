@@ -1,71 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog Collection | Conscience Media Print</title>
-    <link rel="stylesheet" href="./catalog.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conscience Media – Print & Branding</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+  
   <!-- NAV -->
 <nav id="navbar">
   <a class="nav-logo" href="#hero">Conscience<span>Media Print</span></a>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="catalog.html">Catalogue</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
     <li><a href="https://wa.me/2348037111171" target="_blank" class="nav-cta">WhatsApp Us</a></li>
   </ul>
   <div class="hamburger" id="hamburger" onclick="toggleMenu()">
     <span></span><span></span><span></span>
   </div>
 </nav>
-    <!-- MAIN CATALOG CONTAINER MATCHING YOUR NOTEBOOK SKETCH -->
-    <main class="catalog-container">
-       
-        <!-- SECTION 1: BROCHURES -->
-        <section class="category-block">
-            <div class="inner-quad-grid">
-                <div class="grid-cell"><img src="./brochure1.png" alt="Brochure view 1"></div>
-                <div class="grid-cell"><img src="./brochure2.png" alt="Brochure view 2"></div>
-                <div class="grid-cell"><img src="./brochure3.png" alt="Brochure view 3"></div>
-                <div class="grid-cell"><img src="./brochure4.png" alt="Brochure view 4"></div>
-            </div>
-                <a href="https://drive.google.com/drive/folders/1C43YMz03uZLNqt1py8e4a41AuwaOzutf"><h3>Brochures</h3></a>
-        </section>
 
-        <!-- SECTION 2: MERCHANDISE -->
-        <section class="category-block">
-            <div class="inner-quad-grid">
-                <div class="grid-cell"><img src="./jotter1.png" alt="jotter view 1"></div>
-                <div class="grid-cell"><img src="./jotter2.png" alt="jotter view 2"></div>
-                <div class="grid-cell"><img src="./jotter3.png" alt="jotter view 3"></div>
-                <div class="grid-cell"><img src="./jotter4.png" alt="jotter view 4"></div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/10n7uit2vkqizZoB6C6EOf9daJkdOoRug"><h3>Jotters</h3></a>
-        </section>
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Nigeria's Print &amp; Branding Studio</div>
+    <h1>Where Ideas<em>Get Printed.</em></h1>
+    <p>From business cards to banners, branded merchandise to full identity packages — Conscience Media brings your vision to life with precision and style.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/2348037111171?text=Hello%2C%20I%27d%20like%20to%20inquire%20about%20your%20printing%20and%20branding%20services." target="_blank" class="btn-primary">
+        💬 Chat on WhatsApp
+      </a>
+      <a href="#services" class="btn-secondary">View Services →</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img id="hero-img" src="./Images/heroimgfour.png" alt="Printing professional at work" />
+  </div>
+  <div class="hero-badge">
+    <div class="hero-badge-inner">CMP</div>
+    <div class="hero-badge-sub">Conscience Media <br> Print</div>
+  </div>
+</section>
 
-        <!-- SECTION 3: SIGNAGE -->
-        <section class="category-block">
-            <div class="inner-quad-grid">
-                <div class="grid-cell"><img src="./Wedding card1.png" alt="Wedding card view 1"></div>
-                <div class="grid-cell"><img src="./Wedding card2.png" alt="Wedding card view 2"></div>
-                <div class="grid-cell"><img src="./Wedding card3.png" alt="Wedding card view 3"></div>
-                <div class="grid-cell"><img src="./Wedding card4.png" alt="Wedding card view 4"></div>
-            </div>
-            <a href="https://drive.google.com/drive/folders/1dVesbkyN0T2qG7P6O_RAn_3yKy0wekew"><h3>Wedding card</h3></a>
-        </section>
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
 
-        <!-- SECTION 4: FLYERS -->
-        <section class="category-block">
-            <div class="inner-quad-grid">
-                <div class="grid-cell"><img src="./wedding banner.jpg" alt="Wedding banner view 1"></div>
-                <div class="grid-cell"><img src="./Award1.png" alt="Aword view 1"></div>
-                <div class="grid-cell"><img src="./sign board.jpg" alt="sign board view 1"></div>
-                <div class="grid-cell"><img src="./Umbrella2.jpg" alt="Umbrella view 1"></div>
-            </div>
-                <a href="https://drive.google.com/drive/folders/1FA5IKOH-0KZenOcPdpChZqeabGQDJFr2"><h3>Merchandise</h3></a>
-        </section>
-    </main>
+    <!-- PHOTO COLLAGE replacing the old black box -->
+    <div class="about-collage-wrap reveal">
+      <div class="about-collage">
+    
+        <img class="collage-img "
+          src="./Images/K.jpg"
+          alt="Branded caps" />
+        
+        <img class="collage-img"
+          src="Images/M.jpg"
+          alt="Branded Aword" />
+          
+        <img class="collage-img"
+          src="Images/Z.jpg"
+          alt="Branded Merchandise" /> 
+
+        <img class="collage-img"
+          src="./Images/Umbrella2.jpg"
+          alt="Weeding Card" />    
+      </div>
+      <div class="collage-badge">Print. Brand. Deliver.</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-tag">About Us</div>
+      <h2 class="section-title">More Than a Print Shop</h2>
+      <p>Conscience Media is a full-service printing and branding company dedicated to helping businesses, startups, and individuals put their best face forward.</p>
+      <p>We handle everything — from concept to delivery. Whether you need a single flyer or a complete brand rollout, we bring the same level of care and quality to every job.</p>
+      <p>Based in Nigeria, we work with clients across the country who trust us to make their brand look as good as it is.</p>
+      <div class="about-stats">
+        <div>
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div>
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Quality Guaranteed</div>
+        </div>
+        <div>
+          <div class="stat-num">Fast</div>
+          <div class="stat-label">Turnaround</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- MARQUEE -->
 <div class="marquee-wrap">
@@ -89,11 +119,85 @@
   </div>
 </div>
 
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-header">
+    <div class="reveal">
+      <div class="section-tag">What We Offer</div>
+      <h2 class="section-title">Our Services</h2>
+    </div>
+    <p class="section-sub reveal">Everything your brand needs, under one roof.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-icon">🖨️</span>
+      <h3>Commercial Printing</h3>
+      <p>High-quality prints for flyers, brochures, posters, catalogues, and more — delivered fast and sharp.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon">💼</span>
+      <h3>Business Stationery</h3>
+      <p>Business cards, letterheads, envelopes, and notepads that make a lasting first impression.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon">🎨</span>
+      <h3>Brand Identity</h3>
+      <p>Logo design, brand colours, typography, and full identity kits built to stand out.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon">🏗️</span>
+      <h3>Signage & Banners</h3>
+      <p>Roll-up banners, flex banners, billboards, and outdoor signage crafted for maximum visibility.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon">👕</span>
+      <h3>Branded Merchandise</h3>
+      <p>T-shirts, caps, tote bags, mugs, and branded giveaways your clients will actually want to keep.</p>
+    </div>
+    <div class="service-card reveal">
+      <span class="service-icon">📦</span>
+      <h3>Packaging & Labels</h3>
+      <p>Custom packaging, product labels, stickers, and tags designed to sell your product on the shelf.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="reveal">
+    <div class="section-tag">Why Choose Us</div>
+    <h2 class="section-title">The Conscience Difference</h2>
+    <p class="section-sub">We don't just print — we partner with you to make your brand unforgettable.</p>
+  </div>
+  <div class="why-grid">
+    <div class="why-card reveal">
+      <div class="why-num">01</div>
+      <h3>Premium Quality</h3>
+      <p>We use top-grade materials and equipment so every piece we deliver looks world-class.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-num">02</div>
+      <h3>Fast Turnaround</h3>
+      <p>Deadlines matter. We work quickly without compromising on the quality of your order.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-num">03</div>
+      <h3>Affordable Pricing</h3>
+      <p>Great prints shouldn't break the bank. We offer competitive rates for every budget.</p>
+    </div>
+    <div class="why-card reveal">
+      <div class="why-num">04</div>
+      <h3>Personal Service</h3>
+      <p>You get direct access to us — no middlemen, just honest communication from start to finish.</p>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrap">
     <div class="contact-info reveal">
-      <div class="section-tag">GET IN TOUCH →</div>
+      <div class="section-tag">Get In Touch →</div>
       <h2 class="section-title">Let's Create Something Great</h2>
       <p>Ready to start a project or just want to ask a question? Reach out via WhatsApp for the fastest response — we're always happy to chat.</p>
       <div class="contact-links">
@@ -130,17 +234,17 @@
         <textarea placeholder="e.g. I need 500 business cards and a roll-up banner…"></textarea>
       </div>
       <button class="btn-primary" onclick="sendToWhatsApp()">
-        Send via WhatsApp  →
+        Send via WhatsApp →
       </button>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer id="FOOTER">
+<footer>
   <div class="logo">Conscience<span>Media Print</span></div>
   <span>© 2026 Conscience Media Print. All rights reserved.</span>
-  <a href="https://wa.me/2348037111171" target="_blank">+234 803 711 1711</a>
+  <a href="https://wa.me/2348037111171" target="_blank">+234 803 7111171</a>
 </footer>
 
 </body>
