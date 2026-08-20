@@ -312,7 +312,7 @@ footer a:hover { color: var(--gold); }
   .why-grid { grid-template-columns: 1fr 1fr; }
   #hero-img { display: none; }
   #hero {
-    padding: 90px 6% 40px;
+    padding: 100px 6% 40px;
   }
 }
 @media (max-width: 560px) {
