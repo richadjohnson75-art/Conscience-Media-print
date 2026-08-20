@@ -225,26 +225,11 @@ footer a:hover { color: var(--gold); }
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ── MOBILE ── */
-@media (max-width: 700px) {
-  .nav-links { display: none; flex-direction: column; gap: 1.2rem; position: absolute; top: 100%; left: 0; right: 0; background: var(--paper); padding: 1.5rem 6%; border-bottom: 1px solid rgba(200,150,62,.2); }
-  .nav-links.open { display: flex; }
-  .grid-cell {
-    width: 80%;
-    height: 80%;
-    background-color: #e5e5e5;
-    overflow: hidden;
-}
-  .grid-cell img {
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-  .hero-badge { display: none; }
-  .about-grid, .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
-}
-@media (max-width: 460px) {
-  .services-grid { grid-template-columns: 1fr; }
-    column-gap: 40px;
-    row-gap: 40px;
+@media (max-width: 768px) {
+  
+.services-grid,
+.about-grid,
+.contact-wrap,
+  grid-template-columns: 1fr;
+  ga
 }
