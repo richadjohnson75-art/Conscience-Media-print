@@ -226,10 +226,23 @@ footer a:hover { color: var(--gold); }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
-  
+/* Prevent grrid items from crushing sideways on small screens */
+.nav-links { display: none; flex-direction: column; gap: 1.2rem; position: absolute; top: 100%; left: 0; right: 0; background: var(--paper); padding: 1.5rem 6%; border-bottom: 1px solid rgba(200,150,62,.2); }
+.nav-links.open { display: flex; }
+.hamburger { display: flex; }
+.hero-badge { display: none; }
 .services-grid,
 .about-grid,
 .contact-wrap,
   grid-template-columns: 1fr;
-  ga
+  gap: 1.5rem;
+}
+
+/* Force images to scale naturally without squishing */
+.grid-cell img,
+.services-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+ }
 }
