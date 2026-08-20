@@ -245,8 +245,6 @@ footer a:hover { color: var(--gold); }
 }
 @media (max-width: 460px) {
   .services-grid { grid-template-columns: 1fr; }
-}
     column-gap: 40px;
     row-gap: 40px;
-}
 }
